@@ -5,7 +5,6 @@ transformers
 whisper
 opencv-python
 numpy
-nvgpu
 soundfile
 ffmpeg-python
 fastapi
