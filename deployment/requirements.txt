@@ -2,7 +2,7 @@ torch
 torchaudio
 torchvision
 transformers
-openai-whisper
+whisper
 opencv-python
 numpy
 nvgpu
