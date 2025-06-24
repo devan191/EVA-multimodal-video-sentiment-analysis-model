@@ -189,9 +189,9 @@ class VideoUtteranceProcessor:
 
 def model_fn(model_dir):
     # Load the model for inference
-    # if not install_ffmpeg():
-    #     raise RuntimeError(
-    #         "FFmpeg installation failed - required for inference")
+    if not install_ffmpeg():
+        raise RuntimeError(
+            "FFmpeg installation failed - required for inference")
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = MultimodalSentimentModel().to(device)
